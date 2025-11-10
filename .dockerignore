@@ -1,0 +1,39 @@
+# .dockerignore - Files to exclude from Docker build
+
+# Local environment files
+.env
+.env.local
+*.env
+
+# Git files
+.git
+.gitignore
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# Build artifacts
+backend/target/
+backend/.mvn/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Documentation
+README.md
+DEPLOYMENT_GUIDE.md
+*.md
+
+# Frontend files (we only need backend)
+frontend/
+
+# Database files
+*.sql
+backend/database-setup.sql
+backend/aiven-setup.sql
